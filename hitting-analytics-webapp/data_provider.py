@@ -160,5 +160,3 @@ class DataProvider:
         if 'avg' not in result and 'hits' in result and 'atBats' in result and result.get('atBats', 0) > 0:
             result['avg'] = round(result.get('hits', 0) / max(1, result.get('atBats', 1)), 3)
         return result
-
-
